@@ -1,0 +1,473 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.bigmama {
+    display: flex;
+    height: 100%;
+}
+
+
+.header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(77 76 76) 2px -2px 10px 0px;
+    background-color: rgb(141 111 122);
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.trash-header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(77 76 76) 2px -2px 10px 0px;
+    background-color: rgb(141 111 122);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.stickynotes {
+    width: 45px;
+    height: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+
+.sticky {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding-right: 30px;
+
+}
+
+.sticky a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    padding: 15px;
+    width: 500px;
+    padding-left: 30px;
+    font-size: 25px;
+    box-shadow: inset 0px 0px 3px 0px black;
+    background-color: rgb(184, 166, 146);
+    border-radius: 15px;
+    border: none;
+
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+
+.main {
+    background-color: rgb(222, 213, 196);
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.rights-main {
+    background-color: rgb(222, 213, 196);
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: flex;
+    text-align: center;
+}
+
+.privacy-main {
+    background-color: rgb(222, 213, 196);
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.trashMenuIcon {
+    display: flex;
+}
+
+.indextrashMenuIcon {
+    display: flex;
+    display: none;
+}
+
+.trashMenuIcon a {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* choice-Menu start*/
+.choice {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0px solid lightgray;
+    box-shadow: 0px 0px 4px 0px;
+    min-width: 250px;
+    width: 250px;
+    height: 230px;
+    border-radius: 0px 0px 10px 0px;
+    border-left: none;
+    border-top: none;
+    background-color: rgb(184, 166, 146);
+
+}
+
+.choicemenu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.choicemenu:hover {
+    background-color: rgb(141 111 122);
+    width: 225px;
+    border-radius: 0 0 0 0;
+}
+
+.choicemenu a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuicon {
+    width: 25px;
+    height: auto;
+    padding-right: 25px;
+
+}
+
+/*Choic-Menu end*/
+
+/*Main start*/
+
+.inputmenu {
+    display: flex;
+
+}
+
+.notemenu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    align-items: baseline;
+}
+
+.inputNote {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+    background-color: rgb(184, 166, 146);
+    box-shadow: 0px 0px 4px 0px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.inputfield {
+    background-color: rgb(184, 166, 146);
+    border-style: hidden;
+    padding: 15px;
+}
+
+.inputfield:focus {
+    outline: none;
+
+}
+
+.inputtext {
+    background-color: rgb(184, 166, 146);
+    border-style: hidden;
+    padding: 15px;
+    height: 85px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+.inputtext:focus {
+    outline: none;
+
+}
+
+.outputNote {
+    width: 180px;
+    min-height: 180px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px;
+    background-color: rgb(184, 166, 146);
+    box-shadow: 0px 0px 4px 0px;
+    /*display: flex;
+    align-items: flex-end;*/
+    flex-direction: column;
+    word-break: break-all;
+
+
+}
+
+.outputNote:hover {
+    background-color: rgb(141 111 122);
+    cursor: pointer;
+}
+
+h3 {
+    text-align: left;
+    margin-top: 0;
+}
+
+span {
+    display: block;
+    min-height: 120px;
+}
+
+.buttonSave {
+    background-color: rgb(222, 213, 196);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0;
+    border-color: lightgray;
+    margin-left: 135px;
+
+}
+
+
+.buttonDelete {
+    background-color: rgb(222, 213, 196);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0;
+    border-color: lightgray;
+    margin-left: 125px;
+
+}
+
+.trashButtonDelete {
+    background-color: rgb(222, 213, 196);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0;
+    border-color: lightgray;
+    margin-left: 76px;
+
+}
+
+.content {
+    display: contents;
+}
+
+
+.footer {
+
+    padding-left: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: rgb(77 76 76) 0px 0px 10px 0px;
+    background-color: rgb(141 111 122);
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.footermenuicon {
+    width: 25px;
+    height: auto;
+    padding-right: 25px;
+
+}
+
+/*Animated Burger Button Menu start*/
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+
+/*animatedt Burger Button Menu end*/
+
+/*to hide the menu start*/
+
+.d-none {
+    display: none;
+}
+
+.trashcontent {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+@media (max-width: 1100px) {
+
+    .search {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .trash-header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .sticky {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .choice {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .main {
+        justify-content: center;
+    }
+
+
+    .menuicon {
+        /*padding: 10px;*/
+        padding-top: 15px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .trash-header {
+        justify-content: center;
+    }
+
+    .indextrashMenuIcon {
+        display: flex;
+
+    }
+
+    .trashMenuIcon {
+        padding-bottom: 10px;
+        padding-left: 25px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header {
+        justify-content: center;
+
+    }
+
+    .footermenuicon {
+        width: 25px;
+        height: auto;
+        /* padding-right: 25px; */
+        padding: 10px;
+    }
+}

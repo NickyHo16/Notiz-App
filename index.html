@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="addNote()">
+    <div class="header">
+        <div>
+
+            <div class="indextrashMenuIcon">
+                <a href="index.html"><img src="img\house.png" alt="Home" class="menuicon"></a>
+
+                <a href="index.html"><img src="img\lightbulb.png" alt="New Note" class="menuicon"></a>
+                <a href="index.html"><img src="img\pen.png" alt="Wrote" class="menuicon"></a>
+                <div><a href="index.html"><img src="img\archive.png" alt="Archive" class="menuicon"></a></div>
+                <div><a href="trash.html"><img src="img\trash.png" alt="Trash" class="menuicon"></a></div>
+
+            </div>
+            <button class="menu"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')); hide()"
+                aria-label="Main Menu">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+        </div>
+        <div class="sticky">
+            <a href="#"><img class="stickynotes" src="img/haftnotiz.png">Niki´s Sticky Note </a>
+        </div>
+        <div>
+            <input class="search" placeholder="Suche..." type="text">
+        </div>
+    </div>
+    <div class="main">
+        <div id="hideElement" class="choice">
+            <div class="choicemenu">
+                <div><a href="#"><img src="img\lightbulb.png" class="menuicon">Notes</a></div>
+
+            </div>
+            <div class="choicemenu">
+                <div><a href="#"><img src="img\clock.png" class="menuicon">Reminder</a></div>
+
+            </div>
+            <div class="choicemenu">
+                <div><a href="#"><img src="img\pen.png" class="menuicon">Edit labels</a></div>
+
+            </div>
+            <div class="choicemenu">
+                <div><a href="#"><img src="img\archive.png" class="menuicon">Archive</a></div>
+
+            </div>
+            <div class="choicemenu">
+                <div><a href="trash.html"><img src="img\trash.png" class="menuicon">Trash</a></div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="inputmenu">
+
+        </div>
+
+        <div class="notemenu" id="output">
+
+            <div class="inputNote">
+
+                <input class="inputfield" id="inputField" placeholder="Title">
+                <textarea class="inputtext" id="inputText" placeholder="Take a Note..."></textarea>
+                <button onclick="addTodo()" class="buttonSave">Save</button>
+
+            </div>
+            <div class="content" id="content">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div><a href="index.html"><img src="img\house.png" alt="Home" class="footermenuicon"></a>
+        </div>
+        <div><a href="index.html"><img src="img\arrows-circle-up_98191.png" alt="Home" class="footermenuicon"></a>
+        </div>
+        <div><a href="impressum.html">
+                <h3>Imprint</h3>
+            </a></div>
+        <div><a href="datenschutz.html">
+                <h3>Privacy</h3>
+            </a></div>
+        <div>
+            <h3><b>https://icon-icons.com</b></h3>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
